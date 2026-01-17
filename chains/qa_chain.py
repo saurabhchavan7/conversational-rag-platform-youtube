@@ -127,9 +127,13 @@ class QAChain:
                 return {
                     "question": question,
                     "answer": "I couldn't find any relevant information to answer this question.",
+                    "citations": [],
                     "sources": [],
                     "num_sources": 0,
-                    "retriever_type": self.retriever_type
+                    "retrieved_chunks": 0,
+                    "retriever_type": self.retriever_type,
+                    "duration_seconds": (datetime.now() - start_time).total_seconds(),
+                    "timestamp": datetime.now().isoformat()
                 }
             
             # Step 2: Build prompt
