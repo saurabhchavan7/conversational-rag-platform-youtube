@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from indexing.text_splitter import (
     TranscriptTextSplitter,
     split_transcript_into_chunks

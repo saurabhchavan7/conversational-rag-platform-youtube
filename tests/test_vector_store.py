@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from indexing.vector_store import PineconeVectorStore, store_embeddings_in_pinecone
 from indexing.embeddings import generate_embeddings_for_chunks
 from indexing.text_splitter import split_transcript_into_chunks

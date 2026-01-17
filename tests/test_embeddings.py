@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from indexing.embeddings import EmbeddingGenerator, generate_embeddings_for_chunks
 from indexing.text_splitter import split_transcript_into_chunks
 from indexing.document_loader import load_youtube_transcript
