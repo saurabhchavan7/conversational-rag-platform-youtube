@@ -1,3 +1,4 @@
+cat > .gitignore << 'EOF'
 # Python
 __pycache__/
 *.py[cod]
@@ -72,3 +73,9 @@ chrome-extension/dist/
 *.tmp
 temp/
 tmp/
+
+# Backup directory
+bin/
+EOF
+
+echo ".gitignore created"
