@@ -105,7 +105,7 @@ def retrieve_chunks(
     logger.info(f"Retrieving for question: '{question[:50]}...'")
     
     # Create retriever
-    retriever = create_retriever(video_id=video_id, top_k=top_k)
+    retriever = create_simple_retriever(video_id=video_id, top_k=top_k)
     
     # Retrieve using LangChain
     results = retriever.invoke(question)
