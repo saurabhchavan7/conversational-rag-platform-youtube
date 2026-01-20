@@ -6,7 +6,7 @@ An end-to-end RAG system that enables intelligent question-answering over YouTub
 
 ## Architecture
 
-![System Architecture](./artifacts/architecture.drawio.png)
+![System Architecture](./artifacts/architecture.drawio.svg)
 
 ---
 
